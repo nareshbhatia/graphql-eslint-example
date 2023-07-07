@@ -1,0 +1,16 @@
+type Account {
+  id: ID!
+  name: String!
+}
+
+type Query {
+  """
+  returns the Account with the specified AccountId
+  """
+  account(id: ID!): Account
+
+  """
+  returns all Accounts
+  """
+  accounts: [Account!]!
+}
